@@ -28,7 +28,7 @@ jobs:
           port: 22
           script: |
             cd ~/apps/ci-cd-parul/
-            git pull origin master
+            git pull git@github.com:pbutarbutar/ci-cd-parul.git master
             npm install --only=prod
             
 
