@@ -18,8 +18,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-        
+      
       - name: Mendeploy pakai SSH
         uses: appleboy/ssh-action@master
         with:
@@ -28,7 +27,7 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: 22
           script: |
-            cd ~/apps/ci-cd-parul
+            cd ~/apps/ci-cd-parul/
             git pull origin master
             npm install --only=prod
             
