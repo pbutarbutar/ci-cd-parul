@@ -3,6 +3,13 @@ const supertest = require('supertest')
 const request = supertest(app)
 
 
+it('Call the /hitung endpoint', async done => {
+    const res = await request.get('/hitung')
+    expect(res.status).toBe(200)
+    expect(res.text).toBe('Hello, Ini adalah menghitung!')
+    done()
+})
+
 it('Call the /youtube endpoint', async done => {
     const res = await request.get('/youtube')
     expect(res.status).toBe(200)
