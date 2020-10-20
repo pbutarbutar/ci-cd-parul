@@ -30,7 +30,7 @@ jobs:
           script: |
             cd ~/apps/ci-cd-parul
             git pull origin master
-            git status
-            pm2 restart ParulianApp
+            npm install --only=prod
+            
 
   
