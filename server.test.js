@@ -4,7 +4,7 @@ const request = supertest(app)
 
 
 it('Call the /hitung endpoint', async done => {
-    const res = await request.get('/youtube')
+    const res = await request.get('/hitung')
     expect(res.status).toBe(200)
     expect(res.text).toBe('Hello, Ini adalah menghitung!')
     done()
