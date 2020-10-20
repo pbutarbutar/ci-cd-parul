@@ -29,6 +29,7 @@ jobs:
           port: 22
           script: |
             cd ~/apps/ci-cd-parul
+            git pull origin master
             
 
   
