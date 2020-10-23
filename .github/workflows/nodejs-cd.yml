@@ -29,6 +29,10 @@ jobs:
           script: |
             cd ~/apps/ci-cd-parul/
             git pull origin master
-            
+            git status
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            npm install --only=prod
+            pm2 restart ParulianApp
 
   
