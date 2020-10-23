@@ -30,9 +30,6 @@ jobs:
             cd ~/apps/ci-cd-parul/
             git pull git@github.com:pbutarbutar/ci-cd-parul.git master
             git status
-            export NVM_DIR=~/.nvm
-            source ~/.nvm/nvm.sh
-            npm install --only=prod
-            pm2 restart ParulianApp
+            
 
   
