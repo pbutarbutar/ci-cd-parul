@@ -7,7 +7,7 @@ const request = supertest(app)
 it('Call the /hitung endpoint', async done => {
     const res = await request.get('/hitung')
     expect(res.status).toBe(200)
-    expect(res.text).toBe('Melakukan perhitungan!')
+    expect(res.text).toBe('XMelakukan perhitungan!')
     done()
 })
 
